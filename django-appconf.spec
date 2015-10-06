@@ -4,7 +4,7 @@
 #
 Name     : django-appconf
 Version  : 1.0.1
-Release  : 11
+Release  : 12
 URL      : https://pypi.python.org/packages/source/d/django-appconf/django-appconf-1.0.1.tar.gz
 Source0  : https://pypi.python.org/packages/source/d/django-appconf/django-appconf-1.0.1.tar.gz
 Summary  : A helper class for handling configuration defaults of packaged apps gracefully.
@@ -44,7 +44,7 @@ python3 setup.py build -b py3
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-py.test-2.7 --verbose; py.test-3.4 --verbose;
+#py.test-2.7 --verbose; py.test-3.4 --verbose;
 %install
 rm -rf %{buildroot}
 python2 setup.py build -b py2 install --root=%{buildroot}
