@@ -4,7 +4,7 @@
 #
 Name     : django-appconf
 Version  : 1.0.2
-Release  : 19
+Release  : 20
 URL      : http://pypi.debian.net/django-appconf/django-appconf-1.0.2.tar.gz
 Source0  : http://pypi.debian.net/django-appconf/django-appconf-1.0.2.tar.gz
 Summary  : A helper class for handling configuration defaults of packaged apps gracefully.
