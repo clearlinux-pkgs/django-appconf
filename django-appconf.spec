@@ -4,7 +4,7 @@
 #
 Name     : django-appconf
 Version  : 1.0.2
-Release  : 20
+Release  : 21
 URL      : http://pypi.debian.net/django-appconf/django-appconf-1.0.2.tar.gz
 Source0  : http://pypi.debian.net/django-appconf/django-appconf-1.0.2.tar.gz
 Summary  : A helper class for handling configuration defaults of packaged apps gracefully.
@@ -18,11 +18,7 @@ BuildRequires : python3-dev
 BuildRequires : setuptools
 
 %description
-django-appconf
 ==============
-.. image:: http://codecov.io/github/django-compressor/django-appconf/coverage.svg?branch=develop
-:alt: Code Coverage
-:target: http://codecov.io/github/django-compressor/django-appconf?branch=develop
 
 %package python
 Summary: python components for the django-appconf package.
@@ -36,20 +32,27 @@ python components for the django-appconf package.
 %setup -q -n django-appconf-1.0.2
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1484542721
+export SOURCE_DATE_EPOCH=1503087248
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1484542721
+export SOURCE_DATE_EPOCH=1503087248
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+echo ----[ mark ]----
+cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
+echo ----[ mark ]----
 
 %files
 %defattr(-,root,root,-)
 
 %files python
 %defattr(-,root,root,-)
-/usr/lib/python*/*
+/usr/lib/python2*/*
+/usr/lib/python3*/*
