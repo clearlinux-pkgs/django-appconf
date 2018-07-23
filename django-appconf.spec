@@ -4,9 +4,9 @@
 #
 Name     : django-appconf
 Version  : 1.0.2
-Release  : 22
-URL      : http://pypi.debian.net/django-appconf/django-appconf-1.0.2.tar.gz
-Source0  : http://pypi.debian.net/django-appconf/django-appconf-1.0.2.tar.gz
+Release  : 23
+URL      : https://files.pythonhosted.org/packages/34/b9/d07195652ab494b026f7cb0341dd6e5f2e6e39be177abe05e2cec8bd46e4/django-appconf-1.0.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/34/b9/d07195652ab494b026f7cb0341dd6e5f2e6e39be177abe05e2cec8bd46e4/django-appconf-1.0.2.tar.gz
 Summary  : A helper class for handling configuration defaults of packaged apps gracefully.
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -56,7 +56,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532217417
+export SOURCE_DATE_EPOCH=1532325308
 python3 setup.py build -b py3
 
 %install
