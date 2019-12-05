@@ -4,7 +4,7 @@
 #
 Name     : django-appconf
 Version  : 1.0.3
-Release  : 27
+Release  : 28
 URL      : https://files.pythonhosted.org/packages/8e/9e/0cf10dc64e69f553dd1f8d54b8c55c31fb632d60ddcaeab3f21c472005ca/django-appconf-1.0.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/8e/9e/0cf10dc64e69f553dd1f8d54b8c55c31fb632d60ddcaeab3f21c472005ca/django-appconf-1.0.3.tar.gz
 Summary  : A helper class for handling configuration defaults of packaged apps gracefully.
