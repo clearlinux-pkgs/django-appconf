@@ -1,5 +1,5 @@
 PKG_NAME := django-appconf
-URL = https://files.pythonhosted.org/packages/11/17/3093cd487d17e54d7d25ede33b0c7694982bf5f2a3d8055059f25eb9f90c/django-appconf-1.0.4.tar.gz
+URL = https://files.pythonhosted.org/packages/d6/dc/ab95f120aa249f215b1a7925a9062393c039481e1df77b4455e021ae6f67/django-appconf-1.0.5.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
