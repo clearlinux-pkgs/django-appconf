@@ -4,7 +4,7 @@
 #
 Name     : django-appconf
 Version  : 1.0.5
-Release  : 43
+Release  : 44
 URL      : https://files.pythonhosted.org/packages/d6/dc/ab95f120aa249f215b1a7925a9062393c039481e1df77b4455e021ae6f67/django-appconf-1.0.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/d6/dc/ab95f120aa249f215b1a7925a9062393c039481e1df77b4455e021ae6f67/django-appconf-1.0.5.tar.gz
 Summary  : A helper class for handling configuration defaults of packaged apps gracefully.
@@ -16,6 +16,7 @@ Requires: django-appconf-python3 = %{version}-%{release}
 Requires: Django
 BuildRequires : Django
 BuildRequires : buildreq-distutils3
+BuildRequires : pytest
 
 %description
 django-appconf
@@ -61,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1632508234
+export SOURCE_DATE_EPOCH=1633547657
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -73,6 +74,11 @@ export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
+%check
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
+pytest --verbose || :
 %install
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
