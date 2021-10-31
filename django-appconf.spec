@@ -4,7 +4,7 @@
 #
 Name     : django-appconf
 Version  : 1.0.5
-Release  : 47
+Release  : 48
 URL      : https://files.pythonhosted.org/packages/d6/dc/ab95f120aa249f215b1a7925a9062393c039481e1df77b4455e021ae6f67/django-appconf-1.0.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/d6/dc/ab95f120aa249f215b1a7925a9062393c039481e1df77b4455e021ae6f67/django-appconf-1.0.5.tar.gz
 Summary  : A helper class for handling configuration defaults of packaged apps gracefully.
@@ -62,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1633547657
+export SOURCE_DATE_EPOCH=1635723836
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
